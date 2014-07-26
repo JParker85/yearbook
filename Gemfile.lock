@@ -53,6 +53,8 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.1)
+    faker (1.4.2)
+      i18n (~> 0.5)
     ffi (1.9.3)
     formatador (0.2.5)
     guard (2.6.1)
@@ -176,6 +178,7 @@ DEPENDENCIES
   bourbon
   coffee-rails (~> 4.0.0)
   devise
+  faker
   guard
   jbuilder (~> 2.0)
   jquery-rails
