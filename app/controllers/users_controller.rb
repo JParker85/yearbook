@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  protect_from_forgery with: :null_session
   before_action :set_user, only: :show
   respond_to :json
 
