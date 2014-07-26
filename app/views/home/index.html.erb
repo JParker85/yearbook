@@ -2,17 +2,10 @@
 <html>
   <head>
     <title>Yearbook</title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div class = "logon">
-      <form>
-        <br><input type="text" name="username" placeholder="Username" autofocus><br>
-        <br><input type="password" name="pwd" placeholder="Password">
-        <br><input type="submit" value="Login">
-      </form>
-    </div>
+    <button id="list">List Students</button>
+    <%=javascript_include_tag "application" %>
   </body>
 </html>
