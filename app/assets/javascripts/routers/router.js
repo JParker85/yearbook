@@ -8,7 +8,7 @@ var app = app || {};
 	// ----------
 	var YearbookRouter = Backbone.Router.extend({
 		routes: {
-			'*filter': 'setFilter'
+			'*filter'			: 'setFilter'
 		},
 
 		setFilter: function (param) {
@@ -16,8 +16,8 @@ var app = app || {};
 			app.YearbookFilter = param || '';
 
 			// Trigger a collection filter event, causing hiding/unhiding
-			// of YEarbook view items
-			app.CohortView.trigger('filter');
+			// of Yearbook view items
+			app.UsersView.trigger('filter');
 		}
 	});
 
