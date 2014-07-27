@@ -14,5 +14,26 @@
  */
 
 @import "bourbon";
-@import "home";
-@import "users";
+// @import "home";
+// @import "users";
+
+// $gray:#9EA6A3;
+// $teal:#8CD3BA;
+
+
+body{
+background-color: #9EA6A3;
+}
+.container{
+  max-width: 965px;
+  background-color:#9EA6A3;
+  margin:auto;
+
+}
+span{
+  background-color:black;
+  img{
+    height: 100px;
+  }
+
+}
