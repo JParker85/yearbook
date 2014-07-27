@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20140726155723) do
     t.string   "linked_in"
     t.string   "website"
     t.text     "bio"
+    t.boolean  "admin"
     t.string   "name"
     t.string   "course"
     t.string   "cohort"
