@@ -1,7 +1,7 @@
 var app = app || {};
 
 app.UsersView = Backbone.View.extend({
-  el: $('#users'),
+  el: $('#Users'),
   initialize: function() {
     this.collection = new app.Users();
     this.collection.fetch();
@@ -10,7 +10,7 @@ app.UsersView = Backbone.View.extend({
     this.listenTo(this.collection, 'reset', this.render);
   },
   render: function() {
-    this.$el.append("<h1>Students List</h1>");
+    // this.$el.append("<h1>Students List</h1>");
     this.collection.each(function(user) {
       this.renderUser(user);
     }, this);

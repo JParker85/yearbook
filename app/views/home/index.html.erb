@@ -1,56 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Yearbook</title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    "application" %>
+<button id="list">List Students</button>
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<div id="Users">
+</div>
 
-  </head>
-  <body>
-    <header>
-
-      <span><%= image_tag 'iron-yard-logo-final.png' %><h2>YEARBOOK</h2> </span>
-    <span class = "login">
-      <!-- Do we need an action? -->
-      <form name="input" action="???" method="get">
-        <input type="text" name="user"placeholder="Username">
-        <input type="password" name="pwd"placeholder="Password">
-        <input type="submit" value="Login">
-      </form>
-    </span>
-
-    </header>
-    <div class = "container">
-    <button id="list">List Students</button>
-
-    <div id="users">
-      </div>
-      <script id="cohartTemplate" type="text/template">
-        <ul>
-          <li class = "cohartList"><%%= imgURL %></li>
-        </ul>
-    </script>
-
-      <div id="user">
-      </div>
-      <script id="studentTemplate" type="text/template">
-        <header><img class = "logo" src= '#'></header>
-        <ul>
-          <li>Photo<%%= photo %></li>
-          <li>Name<%%= name %></li>
-          <li>Biography<%%= biography %></li>
-          <li>Twitter<%%= twitter %></li>
-          <li>GitHub<%%= gitHub %></li>
-          <li>LinkedIn<%%= linkedIn %></li>
-          <button id="Save">Save</button>
-        </ul>
-    </script>
-
-
-    <%=javascript_include_tag "application" %>
-  </div>
-  </body>
-</html>
+<script id="userTemplate" type="text/template">
+  <ul class = "userInfo">
+    <li>Name<%%= name %></li>
+  </ul>
+</script>

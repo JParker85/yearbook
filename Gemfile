@@ -16,6 +16,7 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'bourbon'
 gem 'faker'
+gem 'neat'
 
 group :development do
     gem 'guard'
