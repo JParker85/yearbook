@@ -17,5 +17,6 @@
     course: "Ruby on Rails",
     cohort: "Summer 2014",
     bio: Faker::Lorem.paragraph,
+    picture: "http://eofdreams.com/data_images/dreams/bear/bear-09.jpg",
     admin: false)
 end
