@@ -1,5 +1,6 @@
 var app = app || {};
 
 $(function() {
-    new app.HomeView();
+  var view = new app.HomeView();
+  view.listUsers();
 });

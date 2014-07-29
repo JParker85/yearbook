@@ -1,61 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html>
   <head>
     <title>Yearbook</title>
-
     <%= csrf_meta_tags %>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <%= stylesheet_link_tag    "application" %>
-  </head>
-  <body>
-    <div class = "container">
-      <header>
-        <span class "topLogo"><img src ="assets/iron-yard-logo-final.png"></span>
-
-      <span class = "headerLogin">
-
-        <form name="input" method="get">
-          <input type="text" name="user"placeholder="Username">
-          <input type="password" name="pwd"placeholder="Password">
-          <input type="submit" value="Login">
-        </form>
-      </span>
-
-      </header>
-
-      <button id="list">List Students</button>
-
-      <div id="Users">
-        </div>
-
-<script id="userTemplate" type="text/template">
-  <ul class = "userInfo">
-
-    <li><%%= name %></li>
-    <li><%%= email %></li>
-    <li><img src = <%%= picture %>></li>
-
-  </ul>
-
-
-</script>
-
-
-        <div id="user">
-        </div>
-
-        <script id="userTemplate" type="text/template">
-          <ul class = "userInfo">
-            <li><img src = "<%%= photo %>"</li>
-            <li>Name<%%= name %></li>
-            <li>Biography<%%= biography %></li>
-            <li>Twitter<%%= twitter %></li>
-            <li>GitHub<%%= gitHub %></li>
-            <li>LinkedIn<%%= linkedIn %></li>
-            <button id="Save">Save</button>
-          </ul>
-      </script>
-
-  </div>
-  </body>
-</html>
+      <%= stylesheet_link_tag    "application" %>
+    </head>
+    <body>
+      <div class = "container">
+        <header>
+          <span class "topLogo">
+            <img src ="assets/iron-yard-logo-final.png">
+            </span>
+            <span class = "headerLogin">
+              <form name="input" method="get">
+                <input type="text" name="user"placeholder="Username">
+                  <input type="password" name="pwd"placeholder="Password">
+                    <input type="submit" value="Login">
+                    </form>
+                  </span>
+                </header>
+                <button id="list">List Students</button>
+                <div id="Users">
+                </div>
+                <script id="userTemplate" type="text/template">
+                  <ul class = "userInfo">
+                    <li>
+                      <img src=<%%= picture %>>
+                      </li>
+                      <li class = 'userName'>
+                        <%%= name %>
+                      </li>
+                    </ul>
+                  </script>
+                  <div id="user">
+                  </div>
+                  <script id="userTemplate" type="text/template">
+                    <ul class = "userInfo">
+                      <li>
+                        <img src = "<%%= photo %>"</li>
+                        <li>Name<%%= name %>
+                        </li>
+                        <li>Biography<%%= biography %>
+                        </li>
+                        <li>Twitter<%%= twitter %>
+                        </li>
+                        <li>GitHub<%%= gitHub %>
+                        </li>
+                        <li>LinkedIn<%%= linkedIn %>
+                        </li>
+                        <button id="Save">Save</button>
+                      </ul>
+                    </script>
+                  </div>
+                </body>
+              </html>

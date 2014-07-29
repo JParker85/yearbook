@@ -1,6 +1,13 @@
-var app = app || {};
+// var app = app || {};
 
 app.UserView = Backbone.View.extend({
+  events:{
+    'click':'showUser'
+  },
+  showUser:function(){
+    debugger;
+  },
+
   tagName: 'div',
   className: 'userContainer',
   template: $('#userTemplate').html(),

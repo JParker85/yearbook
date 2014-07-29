@@ -1,4 +1,4 @@
-var app = app || {};
+//var app = app || {};
 
 app.UsersView = Backbone.View.extend({
   el: $('#Users'),
@@ -10,8 +10,9 @@ app.UsersView = Backbone.View.extend({
     this.listenTo(this.collection, 'reset', this.render);
   },
   render: function() {
-    //this.$el.append("<h1>Students List</h1>");
+    this.$el.append("<h1>Students List</h1>");
     this.collection.each(function(user) {
+
       this.renderUser(user);
     }, this);
   },
