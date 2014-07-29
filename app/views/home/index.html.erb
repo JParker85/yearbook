@@ -10,8 +10,11 @@
     <body>
       <div class = "container">
         <header>
-          <span class "topLogo">
+          <span class "logo">
             <img src ="assets/iron-yard-logo-final.png">
+            </span>
+            <span class = headerText>
+              YEARBOOK
             </span>
             <span class = "headerLogin">
               <form name="input" method="get">
@@ -21,26 +24,25 @@
                     </form>
                   </span>
                 </header>
-                <button id="list">List Students</button>
                 <div id="Users">
                 </div>
                 <script id="userTemplate" type="text/template">
-                  <ul class = "userInfo">
-                    <li>
-                      <img src=<%%= picture %>>
-                      </li>
-                      <li class = 'userName'>
+                  <div class = "usersInfo">
+                    <img src=<%%= picture %> alt="http://busdiv.scc.losrios.edu/images/faculty/female_silhouette_1.png">
+                      <div class = 'userName'>
                         <%%= name %>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </script>
                   <div id="user">
                   </div>
                   <script id="userTemplate" type="text/template">
                     <ul class = "userInfo">
                       <li>
-                        <img src = "<%%= photo %>"</li>
-                        <li>Name<%%= name %>
+                        <img src=<%%= picture %> alt="http://busdiv.scc.losrios.edu/images/faculty/female_silhouette_1.png">
+                        </li>
+                        <li>
+                          <%%= name %>
                         </li>
                         <li>Biography<%%= biography %>
                         </li>
@@ -53,6 +55,12 @@
                         <button id="Save">Save</button>
                       </ul>
                     </script>
-                  </div>
-                </body>
-              </html>
+                    <footer>
+                      <span class "logo">
+                        <img src ="assets/iron-yard-logo-final.png">
+                      </span>
+                      <span>The Iron Yard Yearbook Copywrite 2014, All Rights Reserved</span>
+                      </footer>
+                    </div>
+                  </body>
+                </html>

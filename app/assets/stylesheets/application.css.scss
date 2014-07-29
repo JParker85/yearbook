@@ -14,7 +14,6 @@
  */
 
 @import "bourbon";
-@import "neat";
 // @import "home";
 // @import "users";
 
@@ -24,13 +23,16 @@ $teal:#8CD3BA;
 
 body{
   background-color: $teal;
-  @include outer-container;
 }
 .container{
+  h1{
+    text-align: center;  
+    }
 
   background-color: $gray;
+  height:100%;
   margin:auto;
-
+  max-width:965px;
 }
  header{
   background-color:#000000;
@@ -48,23 +50,38 @@ body{
     margin-right:15px;
   }
 }
+.Users{
+  float:left;
+}
 
-.userInfo{
-  li{
-    list-style: none;
-    //@include span-columns(4);
-    //@include omega(4n);
-  }
-  img{
-    height:150px;
+.usersInfo{
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+  img {
+    height:170px;
+    border: 1px solid #000000
   }
 }
 
 .userName{
-  clear:both;
+    text-align: center;
+    font-weight: normal;
+    margin: 5px;
 }
 .usersList{
   img{
     height:150px;
   }
+}
+
+footer{
+ background-color:$gray;
+ color: #FFFFFF;
+ img{
+   height: 50px;
+ }
 }
